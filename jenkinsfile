@@ -1,0 +1,24 @@
+node {
+    
+    stage('Build') 
+    {
+        echo "Building Project"
+        mvn clean
+        mvn install
+    }
+
+stage('Deploye') 
+    {
+        echo "Deploye Project"
+    }
+stage('Test') 
+    {
+        echo "Test Project"
+        mvn test
+    }
+stage('Release') 
+    {
+        echo "Release Project"
+    }
+    
+}
